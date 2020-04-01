@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "java -jar swagger-codegen-cli-2.4.12.jar generate -i swagger.yaml -l nodejs-server && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "connect": "^3.7.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "js-yaml": "^3.13.1",
+    "path": "^0.12.7",
     "swagger-cli": "^4.0.2",
-    "swagger-tools": "^0.10.4"
+    "swagger-tools": "^0.10.4",
+    "nodemon": "^2.0.2"
   }
 }
